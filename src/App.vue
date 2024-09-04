@@ -1,28 +1,19 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
+import HeaderComp from "./components/HeaderComp.vue";
+import MainComp from "./components/MainComp.vue";
+import StackComp from "./components/StackComp.vue";
 </script>
 
 <template>
   <div>
-    <div class="flex">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+    <div
+      class="bg-white px-4 flex flex-col w-4/5 m-auto my-10 max-md:mt-4 mb-4 w-75 justify-center"
+    >
+      <HeaderComp />
+      <MainComp />
+      <StackComp />
     </div>
   </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
