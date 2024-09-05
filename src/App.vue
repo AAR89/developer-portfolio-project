@@ -2,16 +2,18 @@
 import HeaderComp from "./components/HeaderComp.vue";
 import MainComp from "./components/MainComp.vue";
 import StackComp from "./components/StackComp.vue";
+import Projects from "./components/Projects.vue";
 </script>
 
 <template>
-  <div>
-    <div
-      class="bg-white px-4 flex flex-col w-4/5 m-auto my-10 max-md:mt-4 mb-4 w-75 justify-center"
-    >
+  <div class="w-screen">
+    <div class="bg-white px-4 flex flex-col w-[95%] m-auto my-10">
+      <!-- <div class="flex justify-between items-start"> -->
       <HeaderComp />
       <MainComp />
+      <!-- </div> -->
       <StackComp />
+      <Projects />
     </div>
   </div>
 </template>

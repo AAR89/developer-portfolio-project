@@ -9,24 +9,28 @@ const smLogosList = [smLogo1, smLogo2, smLogo3];
 </script>
 
 <template>
-  <div class="flex justify-between">
-    <img class="h-14 cursor-pointer" :src="headerLogo" alt="Header logo" />
-
-    <div class="flex justify-between items-center">
-      <ul class="flex gap-12 mr-12">
+  <div class="flex justify-between max-[860px]:flex-col text-center">
+    <img
+      class="h-14 cursor-pointer max-[860px]:h-20"
+      :src="headerLogo"
+      alt="Header logo"
+    />
+    <div class="flex justify-between max-[860px]:flex-col gap-5 items-center">
+      <ul
+        class="flex gap-12 mr-12 max-[860px]:flex-col mr-2 gap-2 max-[860px]:mt-5"
+      >
         <li
-          class="text-light-grey text-xl cursor-pointer"
+          class="text-light-grey text-xl cursor-pointer max-[860px]:text-4xl"
           v-for="item in list"
           :key="item.id"
         >
           {{ item }}
         </li>
       </ul>
-
       <div>
         <ul class="flex gap-5">
           <img
-            class="h-5 cursor-pointer"
+            class="h-5 cursor-pointer max-[860px]:h-9"
             v-for="smLogo in smLogosList"
             :key="smLogo.id"
             :src="smLogo"

@@ -1,49 +1,39 @@
 <script setup>
-import logo1 from "../assets/Stack-logos/Stack-logo0.svg";
-import logo2 from "../assets/Stack-logos/Stack-logo1.svg";
-import logo3 from "../assets/Stack-logos/Stack-logo2.svg";
-import logo4 from "../assets/Stack-logos/Stack-logo3.svg";
-import logo5 from "../assets/Stack-logos/Stack-logo4.svg";
-import logo6 from "../assets/Stack-logos/Stack-logo5.svg";
-import logo7 from "../assets/Stack-logos/Stack-logo6.svg";
-import logo8 from "../assets/Stack-logos/Stack-logo7.svg";
-import logo9 from "../assets/Stack-logos/Stack-logo8.svg";
-import logo10 from "../assets/Stack-logos/Stack-logo9.svg";
-import logo11 from "../assets/Stack-logos/Stack-logo10.svg";
-import logo12 from "../assets/Stack-logos/Stack-logo11.svg";
 const logosList = [
-  logo1,
-  logo2,
-  logo3,
-  logo4,
-  logo5,
-  logo6,
-  logo7,
-  logo8,
-  logo9,
-  logo10,
-  logo11,
-  logo12,
+  "/src/assets/img/Stack-logos/Stack-logo0.svg",
+  "/src/assets/img/Stack-logos/Stack-logo1.svg",
+  "/src/assets/img/Stack-logos/Stack-logo2.svg",
+  "/src/assets/img/Stack-logos/Stack-logo3.svg",
+  "/src/assets/img/Stack-logos/Stack-logo4.svg",
+  "/src/assets/img/Stack-logos/Stack-logo5.svg",
+  "/src/assets/img/Stack-logos/Stack-logo6.svg",
+  "/src/assets/img/Stack-logos/Stack-logo7.svg",
+  "/src/assets/img/Stack-logos/Stack-logo8.svg",
+  "/src/assets/img/Stack-logos/Stack-logo9.svg",
+  "/src/assets/img/Stack-logos/Stack-logo10.svg",
+  "/src/assets/img/Stack-logos/Stack-logo11.svg",
 ];
-
-console.log(logosList);
 </script>
 
 <template>
   <div>
     <div class="m-auto flex flex-col items-center w-100% gap-8">
       <h2
-        class="stack-title text-title-color font-bold text-5xl w-auto font-bold mt-96"
+        class="stack-title text-title-color font-bold text-5xl w-auto font-bold mt-64 max-[715px]:mt-10 text-4xl max-[480px]:text-3xl"
       >
         My Tech Stack
       </h2>
-      <p class="text-light-grey text-3xl">
+      <p
+        class="text-light-grey text-4xl max-[715px]:text-3xl max-[480px]:text-2xl flex text-center"
+      >
         Technologies I’ve been working with recently
       </p>
     </div>
-    <ul class="grid grid-cols-6 gap-8 justify-center items-center mt-36">
-      <li v-for="logo in logosList" :key="logo.id">
-        <img :src="logo" alt="" class="h-20 w-20" />
+    <ul
+      class="grid grid-cols-6 gap-10 justify-items-center items-center mt-20 max-[1180px]:grid-cols-4 max-[860px]:grid-cols-3 max-[560px]:grid-cols-2"
+    >
+      <li v-for="logo in logosList" :key="logo">
+        <img :src="logo" alt="" class="h-28" />
       </li>
     </ul>
   </div>
