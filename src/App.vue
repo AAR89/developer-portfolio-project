@@ -8,10 +8,8 @@ import Projects from "./components/Projects.vue";
 <template>
   <div class="w-screen">
     <div class="bg-white px-4 flex flex-col w-[95%] m-auto my-10">
-      <!-- <div class="flex justify-between items-start"> -->
       <HeaderComp />
       <MainComp />
-      <!-- </div> -->
       <StackComp />
       <Projects />
     </div>
