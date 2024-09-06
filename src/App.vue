@@ -1,17 +1,19 @@
 <script setup>
-import HeaderComp from "./components/HeaderComp.vue";
-import MainComp from "./components/MainComp.vue";
-import StackComp from "./components/StackComp.vue";
+import Header from "./components/Header.vue";
+import Main from "./components/Main.vue";
+import Stack from "./components/Stack.vue";
 import Projects from "./components/Projects.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <div class="w-screen">
+  <div class="w-full">
     <div class="bg-white px-4 flex flex-col w-[95%] m-auto my-10">
-      <HeaderComp />
-      <MainComp />
-      <StackComp />
+      <Header />
+      <Main />
+      <Stack />
       <Projects />
+      <Footer />
     </div>
   </div>
 </template>
