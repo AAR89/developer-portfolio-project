@@ -1,17 +1,17 @@
 <script setup>
 const logosList = [
-  "/src/assets/img/Stack-logos/Stack-logo0.svg",
-  "/src/assets/img/Stack-logos/Stack-logo1.svg",
-  "/src/assets/img/Stack-logos/Stack-logo2.svg",
-  "/src/assets/img/Stack-logos/Stack-logo3.svg",
-  "/src/assets/img/Stack-logos/Stack-logo4.svg",
-  "/src/assets/img/Stack-logos/Stack-logo5.svg",
-  "/src/assets/img/Stack-logos/Stack-logo6.svg",
-  "/src/assets/img/Stack-logos/Stack-logo7.svg",
-  "/src/assets/img/Stack-logos/Stack-logo8.svg",
-  "/src/assets/img/Stack-logos/Stack-logo9.svg",
-  "/src/assets/img/Stack-logos/Stack-logo10.svg",
-  "/src/assets/img/Stack-logos/Stack-logo11.svg",
+  "./img/Stack-logos/Stack-logo1.svg",
+  "./img/Stack-logos/Stack-logo0.svg",
+  "./img/Stack-logos/Stack-logo2.svg",
+  "./img/Stack-logos/Stack-logo3.svg",
+  "./img/Stack-logos/Stack-logo4.svg",
+  "./img/Stack-logos/Stack-logo5.svg",
+  "./img/Stack-logos/Stack-logo6.svg",
+  "./img/Stack-logos/Stack-logo7.svg",
+  "./img/Stack-logos/Stack-logo8.svg",
+  "./img/Stack-logos/Stack-logo9.svg",
+  "./img/Stack-logos/Stack-logo10.svg",
+  "./img/Stack-logos/Stack-logo11.svg",
 ];
 </script>
 
