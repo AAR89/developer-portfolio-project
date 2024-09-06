@@ -1,76 +1,76 @@
 <script setup>
-import image from "../assets/img/project-logos/Rectangle1.svg";
+import image from "../../public/img/project-logos/Rectangle1.svg";
 const projectsCardList = [
   {
-    imageUrl: "src/assets/img/project-logos/Rectangle1.svg",
+    imageUrl: "/public/img/project-logos/Rectangle1.svg",
     title: "Project Tile goes here",
     description:
       "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
     span: "Tech stack ",
     techStack: " : HTML , JavaScript, SASS, React",
-    chainUrl: "src/assets/img/project-logos/chain.svg",
+    chainUrl: "/public/img/project-logos/chain.svg",
     preview: "Live Preview",
-    gitLogo: "src/assets/img/project-logos/git.svg",
+    gitLogo: "/public/img/project-logos/git.svg",
     viewText: "View Code",
   },
   {
-    imageUrl: "src/assets/img/project-logos/Rectangle2.svg",
+    imageUrl: "/public/img/project-logos/Rectangle2.svg",
     title: "Project Tile goes here",
     description:
       "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
     span: "Tech stack ",
     techStack: " : HTML , JavaScript, SASS, React",
-    chainUrl: "src/assets/img/project-logos/chain.svg",
+    chainUrl: "/public/img/project-logos/chain.svg",
     preview: "Live Preview",
-    gitLogo: "src/assets/img/project-logos/git.svg",
+    gitLogo: "/public/img/project-logos/git.svg",
     viewText: "View Code",
   },
   {
-    imageUrl: "src/assets/img/project-logos/Rectangle3.svg",
+    imageUrl: "/public/img/project-logos/Rectangle3.svg",
     title: "Project Tile goes here",
     description:
       "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
     span: "Tech stack ",
     techStack: " : HTML , JavaScript, SASS, React",
-    chainUrl: "src/assets/img/project-logos/chain.svg",
+    chainUrl: "/public/img/project-logos/chain.svg",
     preview: "Live Preview",
-    gitLogo: "src/assets/img/project-logos/git.svg",
+    gitLogo: "/public/img/project-logos/git.svg",
     viewText: "View Code",
   },
   {
-    imageUrl: "src/assets/img/project-logos/Rectangle4.svg",
+    imageUrl: "/public/img/project-logos/Rectangle4.svg",
     title: "Project Tile goes here",
     description:
       "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
     span: "Tech stack ",
     techStack: " : HTML , JavaScript, SASS, React",
-    chainUrl: "src/assets/img/project-logos/chain.svg",
+    chainUrl: "/public/img/project-logos/chain.svg",
     preview: "Live Preview",
-    gitLogo: "src/assets/img/project-logos/git.svg",
+    gitLogo: "/public/img/project-logos/git.svg",
     viewText: "View Code",
   },
   {
-    imageUrl: "src/assets/img/project-logos/Rectangle5.svg",
+    imageUrl: "/public/img/project-logos/Rectangle5.svg",
     title: "Project Tile goes here",
     description:
       "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
     span: "Tech stack ",
     techStack: " : HTML , JavaScript, SASS, React",
-    chainUrl: "src/assets/img/project-logos/chain.svg",
+    chainUrl: "/public/img/project-logos/chain.svg",
     preview: "Live Preview",
-    gitLogo: "src/assets/img/project-logos/git.svg",
+    gitLogo: "/public/img/project-logos/git.svg",
     viewText: "View Code",
   },
   {
-    imageUrl: "src/assets/img/project-logos/Rectangle6.svg",
+    imageUrl: "/public/img/project-logos/Rectangle6.svg",
     title: "Project Tile goes here",
     description:
       "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
     span: "Tech stack ",
     techStack: " : HTML , JavaScript, SASS, React",
-    chainUrl: "src/assets/img/project-logos/chain.svg",
+    chainUrl: "/public/img/project-logos/chain.svg",
     preview: "Live Preview",
-    gitLogo: "src/assets/img/project-logos/git.svg",
+    gitLogo: "/public/img/project-logos/git.svg",
     viewText: "View Code",
   },
 ];
@@ -114,7 +114,7 @@ const projectsCardList = [
             </span>
             {{ projectCard.techStack }}
           </p>
-          <div class="flex justify-stert items-center gap-12">
+          <div class="flex justify-start items-center gap-12">
             <div class="flex justify-center items-center gap-2.5">
               <img
                 class="h-5 w-5 mt-1"
@@ -124,7 +124,7 @@ const projectsCardList = [
               <a
                 href="#"
                 target="_blank"
-                class="text-black text-base font-bold underline hover:text-blue-500"
+                class="text-black text-base font-bold underline hover:text-blue-500 max-[380px]:text-sm"
               >
                 {{ projectCard.preview }}
               </a>
@@ -138,7 +138,7 @@ const projectsCardList = [
               <a
                 href="#"
                 target="_blank"
-                class="text-black text-base font-bold underline hover:text-blue-500"
+                class="text-black text-base font-bold underline hover:text-blue-500 max-[380px]:text-sm"
               >
                 {{ projectCard.viewText }}
               </a>

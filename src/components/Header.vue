@@ -1,10 +1,10 @@
 <script setup>
-import headerLogo from "../assets/img/header-logo.svg";
+import headerLogo from "../../public/img/header-logo.svg";
 import Navigation from "./Navigation.vue";
 
-import smLogo1 from "../assets/img/sm-logo1.svg";
-import smLogo2 from "../assets/img/sm-logo2.svg";
-import smLogo3 from "../assets/img/sm-logo3.svg";
+import smLogo1 from "../../public/img/sm-logo1.svg";
+import smLogo2 from "../../public/img/sm-logo2.svg";
+import smLogo3 from "../../public/img/sm-logo3.svg";
 
 const smLogosList = [smLogo1, smLogo2, smLogo3];
 </script>
