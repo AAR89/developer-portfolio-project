@@ -4,7 +4,6 @@ const list = ["Home", "About", "Tech Stack", "Projects", "Contact"];
 
 <template>
   <ul class="flex">
-    <!-- max-[860px]:text-4xl -->
     <li class="text-xl cursor-pointer" v-for="item in list" :key="item.id">
       {{ item }}
     </li>

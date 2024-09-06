@@ -3,15 +3,6 @@ import { provide } from "vue";
 import footerLogo from "/img/footer-logo.svg";
 import Navigation from "./Navigation.vue";
 
-// import { defineConfig } from "vite";
-// import vue from "@vitejs/plugin-vue";
-
-// // https://vitejs.dev/config/
-// export default defineConfig({
-//   plugins: [vue()],
-//   imagePath: "/src/assets/images/home/",
-// });
-
 const phoneNumber = "+91 12345 09876";
 const mail = "info@designmodo.com";
 const fillPurple = "#42446E";
