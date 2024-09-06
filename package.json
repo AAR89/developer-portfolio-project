@@ -1,6 +1,6 @@
 {
   "name": "developer-portfolio-project",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://aar89.github.io/developer-portfolio-project/",
