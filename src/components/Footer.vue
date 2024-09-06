@@ -13,7 +13,7 @@ const fillPurple = "#42446E";
     <div class="flex justify-between items-center max-[510px]:flex-col">
       <img :src="footerLogo" alt="Footer logo" />
       <div
-        class="flex gap-10 justify-between max-[370px]: flex-col items-center"
+        class="flex gap-10 justify-between max-[370px]:flex-col items-center"
       >
         <div
           class="flex items-center gap-12 text-title-color text-lg max-[710px]:flex-col max-[710px]:gap-1 items-start mt-4"
@@ -21,7 +21,7 @@ const fillPurple = "#42446E";
           <div>{{ phoneNumber }}</div>
           <div>{{ mail }}</div>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 mt-2 max-[510px]:mt-0">
           <svg
             width="30"
             height="30"

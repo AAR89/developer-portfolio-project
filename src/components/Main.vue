@@ -4,11 +4,11 @@ import avatar from "../assets/img/avatar.jpg";
 
 <template>
   <div
-    class="flex justify-between items-center mt-48 max-[715px]:flex-col mt-10"
+    class="flex justify-between items-center mt-48 w-full max-[880px]:flex-col max-[880px]:mt-[80px]"
   >
     <div>
       <h2
-        class="main-title text-title-color font-bold text-6xl w-auto h-72 font-bold mt-5 max-[865px]:text-5xl max-[480px]:text-4xl"
+        class="main-title text-title-color font-bold text-6xl text-start w-auto h-72 font-bold mt-5 max-[865px]:text-6xl max-[565px]:text-5xl text-center"
       >
         Hi 👋, <br />
         My name is <br />
@@ -17,7 +17,9 @@ import avatar from "../assets/img/avatar.jpg";
       </h2>
     </div>
 
-    <div class="main__avatar-circle w-[75%]] max-[700px]:w-[65%]">
+    <div
+      class="main__avatar-circle w-[75%]] max-[880px]:mt-5 max-[700px]:w-[65%]"
+    >
       <img class="rounded-full" :src="avatar" alt="Profile Pic" />
     </div>
   </div>
