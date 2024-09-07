@@ -9,7 +9,6 @@ const list = [
 
 function scroll(x, y) {
   document.documentElement.scrollTo({ top: y, behavior: "smooth" });
-  console.log("scroll");
 }
 </script>
 
