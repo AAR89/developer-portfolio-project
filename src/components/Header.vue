@@ -11,14 +11,15 @@ const smLogosList = [smLogo1, smLogo2, smLogo3];
 
 <template>
   <div
-    class="flex justify-between mb-48 max-[880px]:mb-[80px] max-[670px]:flex-col"
+    v-pin="50"
+    class="px-2 flex justify-between mb-48 max-[880px]:mb-[80px] max-[670px]:flex-col"
   >
     <img class="h-14 cursor-pointer" :src="headerLogo" alt="Header logo" />
     <div
       class="flex justify-between max-[670px]:mt-5 max-[565px]:flex-col gap-3 items-center"
     >
       <Navigation
-        class="flex gap-3 text-light-grey w-full max-[565px]:justify-center flex-wrap"
+        class="flex gap-3 text-light-grey max-[565px]:justify-center flex-wrap"
       />
       <div>
         <ul class="flex gap-3 mt-1">

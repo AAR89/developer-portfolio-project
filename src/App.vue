@@ -9,7 +9,7 @@ import { onMounted, provide } from "vue";
 const scrollToElement = (elementId) => {
   if (elementId !== "Header") {
     setTimeout(function () {
-      document.getElementById(elementId).scrollIntoView();
+      document.getElementById(elementId).scrollIntoView({ behavior: "smooth" });
     }, 100);
   } else window.scrollTo(0, 0);
 };
@@ -24,7 +24,7 @@ onMounted(() => {
 <template>
   <div class="w-full">
     <div class="bg-white px-4 flex flex-col w-[95%] m-auto mt-10">
-      <Header id="Header" />
+      <Header id="Header" class="w-[95%] m-auto" />
       <About id="About" />
       <TechStack id="Tech Stack" />
       <Projects id="Projects" />
