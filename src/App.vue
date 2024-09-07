@@ -7,9 +7,11 @@ import Footer from "./components/Footer.vue";
 import { onMounted, provide } from "vue";
 
 const scrollToElement = (elementId) => {
-  setTimeout(function () {
-    document.getElementById(elementId).scrollIntoView();
-  }, 100);
+  if (elementId !== "Header") {
+    setTimeout(function () {
+      document.getElementById(elementId).scrollIntoView();
+    }, 100);
+  } else window.scrollTo(0, 0);
 };
 
 provide("scrollToElement", scrollToElement);
