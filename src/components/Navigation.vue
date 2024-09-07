@@ -11,11 +11,6 @@ function scroll(x, y) {
   document.documentElement.scrollTo({ top: y, behavior: "smooth" });
   console.log("scroll");
 }
-
-window.addEventListener("scroll", function () {
-  const scrollPosition = window.scrollY;
-  console.log(scrollPosition);
-});
 </script>
 
 <template>
