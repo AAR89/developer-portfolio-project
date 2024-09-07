@@ -12,7 +12,7 @@ const scrollToElement = inject("scrollToElement");
 </script>
 
 <template>
-  <router-view to="/contacts" class="flex">
+  <ul class="flex">
     <li
       @click="scrollToElement(item.position)"
       class="text-xl cursor-pointer"
@@ -21,5 +21,5 @@ const scrollToElement = inject("scrollToElement");
     >
       {{ item.name }}
     </li>
-  </router-view>
+  </ul>
 </template>
