@@ -1,15 +1,14 @@
 <script setup>
+import { inject } from "vue";
 const list = [
   { name: "Home", position: 0 },
   { name: "About", position: 110 },
   { name: "Tech Stack", position: 900 },
   { name: "Projects", position: 1777 },
-  { name: "Contact", position: 3916 },
+  { name: "Contact", position: 3915 },
 ];
 
-function scroll(x, y) {
-  document.documentElement.scrollTo({ top: y, behavior: "smooth" });
-}
+const scroll = inject("scroll");
 </script>
 
 <template>
