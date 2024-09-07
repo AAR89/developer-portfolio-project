@@ -1,20 +1,20 @@
 <script setup>
 import { inject } from "vue";
 const list = [
-  { name: "Home", position: 0 },
-  { name: "About", position: 110 },
-  { name: "Tech Stack", position: 900 },
-  { name: "Projects", position: 1777 },
-  { name: "Contact", position: 3915 },
+  { name: "Home", position: "Header" },
+  { name: "About", position: "About" },
+  { name: "Tech Stack", position: "Tech Stack" },
+  { name: "Projects", position: "Projects" },
+  { name: "Contact", position: "Footer" },
 ];
 
-const scroll = inject("scroll");
+const scrollToElement = inject("scrollToElement");
 </script>
 
 <template>
   <router-view to="/contacts" class="flex">
     <li
-      @click="scroll(0, item.position)"
+      @click="scrollToElement(item.position)"
       class="text-xl cursor-pointer"
       v-for="item in list"
       :key="item.id"

@@ -4,10 +4,10 @@ import App from "./App.vue";
 
 import { createMemoryHistory, createRouter } from "vue-router";
 
-import Main from "./components/Main.vue";
+import Main from "./components/About.vue";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
-import Stack from "./components/Stack.vue";
+import Stack from "./components/TechStack.vue";
 import Projects from "./components/Projects.vue";
 
 const routes = [

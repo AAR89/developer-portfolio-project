@@ -1,17 +1,18 @@
 <script setup>
 import Header from "./components/Header.vue";
-import Main from "./components/Main.vue";
-import Stack from "./components/Stack.vue";
+import About from "./components/About.vue";
+import TechStack from "./components/TechStack.vue";
 import Projects from "./components/Projects.vue";
 import Footer from "./components/Footer.vue";
-import { inject, onMounted, provide } from "vue";
+import { onMounted, provide } from "vue";
 
-function scroll(x, y) {
-  window.scrollTo({ top: y, behavior: "smooth" });
-  y = 0;
-}
+const scrollToElement = (elementId) => {
+  setTimeout(function () {
+    document.getElementById(elementId).scrollIntoView();
+  }, 100);
+};
 
-provide("scroll", scroll);
+provide("scrollToElement", scrollToElement);
 
 onMounted(() => {
   scroll(0, 0);
@@ -20,12 +21,12 @@ onMounted(() => {
 
 <template>
   <div class="w-full">
-    <div class="bg-white px-4 flex flex-col w-[95%] m-auto my-10">
-      <Header />
-      <Main />
-      <Stack />
-      <Projects />
-      <Footer />
+    <div class="bg-white px-4 flex flex-col w-[95%] m-auto mt-10">
+      <Header id="Header" />
+      <About id="About" />
+      <TechStack id="Tech Stack" />
+      <Projects id="Projects" />
+      <Footer id="Footer" />
     </div>
   </div>
 </template>
