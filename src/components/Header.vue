@@ -11,7 +11,6 @@ const smLogosList = [smLogo1, smLogo2, smLogo3];
 
 <template>
   <div
-    v-pin="50"
     class="px-2 flex justify-between mb-48 max-[880px]:mb-[80px] max-[670px]:flex-col"
   >
     <img class="h-14 cursor-pointer" :src="headerLogo" alt="Header logo" />
