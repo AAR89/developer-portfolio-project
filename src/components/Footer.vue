@@ -9,7 +9,7 @@ const fillPurple = "#42446E";
 </script>
 
 <template>
-  <div class="mt-[201px] max-[830px]:mt-[100px]">
+  <div class="mb-6 mt-[201px] max-[830px]:mt-[100px]">
     <div class="flex justify-between items-center max-[510px]:flex-col">
       <img :src="footerLogo" alt="Footer logo" />
       <div
@@ -71,7 +71,7 @@ const fillPurple = "#42446E";
     </div>
     <div class="border-b-2 mt-6 text-[#666666] opacity-20"></div>
     <div
-      class="flex items-center justify-between pr-4 mt-4 max-[980px]:flex-col gap-5"
+      class="flex items-center justify-between pr-4 mt-4 max-[1110px]:flex-col gap-5"
     >
       <Navigation
         class="flex text-title-color gap-[52px] max-[635px]:gap-5 max-[500px]:gap-2 flex-wrap justify-center"
