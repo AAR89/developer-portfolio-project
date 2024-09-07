@@ -1,11 +1,32 @@
 <script setup>
-const list = ["Home", "About", "Tech Stack", "Projects", "Contact"];
+const list = [
+  { name: "Home", position: 0 },
+  { name: "About", position: 110 },
+  { name: "Tech Stack", position: 900 },
+  { name: "Projects", position: 1777 },
+  { name: "Contact", position: 3916 },
+];
+
+function scroll(x, y) {
+  document.documentElement.scrollTo({ top: y, behavior: "smooth" });
+  console.log("scroll");
+}
+
+window.addEventListener("scroll", function () {
+  const scrollPosition = window.scrollY;
+  console.log(scrollPosition);
+});
 </script>
 
 <template>
-  <a href="#" class="flex">
-    <li class="text-xl cursor-pointer" v-for="item in list" :key="item.id">
-      {{ item }}
+  <router-view to="/contacts" class="flex">
+    <li
+      @click="scroll(0, item.position)"
+      class="text-xl cursor-pointer"
+      v-for="item in list"
+      :key="item.id"
+    >
+      {{ item.name }}
     </li>
-  </a>
+  </router-view>
 </template>
