@@ -10,7 +10,9 @@ const smLogosList = [smLogo1, smLogo2, smLogo3];
 </script>
 
 <template>
-  <div class="flex justify-between mb-48 max-[670px]:flex-col">
+  <div
+    class="flex justify-between mb-48 max-[880px]:mb-[80px] max-[670px]:flex-col"
+  >
     <img class="h-14 cursor-pointer" :src="headerLogo" alt="Header logo" />
     <div
       class="flex justify-between max-[670px]:mt-5 max-[565px]:flex-col gap-3 items-center"

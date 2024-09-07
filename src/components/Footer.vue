@@ -9,7 +9,7 @@ const fillPurple = "#42446E";
 </script>
 
 <template>
-  <div class="mb-6 mt-[201px] max-[830px]:mt-[100px]">
+  <div class="mb-6 mt-[201px] max-[830px]:mt-[80px]">
     <div class="flex justify-between items-center max-[510px]:flex-col">
       <img :src="footerLogo" alt="Footer logo" />
       <div

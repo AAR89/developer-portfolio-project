@@ -79,7 +79,7 @@ const projectsCardList = [
   <div>
     <div class="m-auto flex flex-col items-center w-100% gap-8">
       <h2
-        class="stack-title text-title-color font-bold text-5xl w-auto font-bold max-[715px]:mt-14 text-4xl max-[480px]:text-3xl"
+        class="stack-title text-title-color font-bold text-5xl w-auto font-bold max-[715px]:text-4xl max-[480px]:text-3xl"
       >
         Projects
       </h2>
